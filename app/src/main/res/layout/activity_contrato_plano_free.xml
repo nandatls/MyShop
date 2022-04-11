@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContratoPlanoFree">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="428dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="104dp"
+        android:background="@color/fundobotoes"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/imgbtn_telaadicionarprodutocarrinho_home"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telaadicionarprodutocarrinho_vender"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_local_offer_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telaadicionarprodutocarrinho_listacategorias"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_dehaze_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telaadicionarprodutocarrinho_carrinho"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telaadicionarprodutocarrinho_perfil"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telaadicionarprodutocarrinho_ajuda"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_help_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_telacontratoplanofree_contratoplanofree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contrato Plano FREE"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <ImageView
+        android:id="@+id/imgv_telacontratoplanofree_imagemcontratofree"
+        android:layout_width="285dp"
+        android:layout_height="327dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334"
+        app:srcCompat="@drawable/_9_990800_contract_icon" />
+
+    <RadioButton
+        android:id="@+id/rbtn_telacontratoplanofree_aceitedetermoscontrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceito os termo do contrato"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.708" />
+
+    <Button
+        android:id="@+id/btn_telacontratoplanofree_cadastrarproduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CADASTRAR PRODUTO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+</androidx.constraintlayout.widget.ConstraintLayout>

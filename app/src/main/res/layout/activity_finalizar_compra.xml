@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalizarCompra">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="428dp"
+        android:layout_height="73dp"
+        android:background="@color/fundobotoes"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgbtn_telafinalizarcompra_home"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telafinalizarcompra_vender"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_local_offer_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telafinalizarcompra_listacateg"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_dehaze_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telafinalizarcompra_carrinho"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telafinalizarcompra_perfil"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telafinalizarcompra_ajuda"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_help_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_telafinalizarcompra_textoprodutoselecionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produto Selecionado"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <ImageView
+        android:id="@+id/imgv_telafinalizarcompra_imagemproduto"
+        android:layout_width="199dp"
+        android:layout_height="199dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231"
+        app:srcCompat="@drawable/samsung" />
+
+    <TextView
+        android:id="@+id/txtv_telafinalizarcompra_formapag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forma de Pagamento"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <Button
+        android:id="@+id/btn_telafinalizarcompra_finalizar"
+        android:layout_width="241dp"
+        android:layout_height="66dp"
+        android:text="Realizar Pagamento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853" />
+
+    <RadioGroup
+        android:layout_width="363dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59">
+
+        <RadioButton
+            android:id="@+id/rdbtn_telafinalizarcompra_cartao"
+            android:layout_width="346dp"
+            android:layout_height="37dp"
+            android:text="Cartão de Crédito" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_telafinalizarcompra_boleto"
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:text="Boleto Bancário" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço de Entrega"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
+
+    <RadioButton
+        android:id="@+id/rdbtn_telafinalizarcompra_end"
+        android:layout_width="179dp"
+        android:layout_height="43dp"
+        android:text="Endereço Principal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

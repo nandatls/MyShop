@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="428dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="104dp"
+        android:background="@color/fundobotoes"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/imgbtn_telahome_home"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telahome_vender"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_local_offer_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telahome_listacategorias"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_dehaze_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telahome_carrinho"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telahome_perfil"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telahome_ajuda"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_help_24" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchview_telahome_buscaproduto"
+        android:layout_width="274dp"
+        android:layout_height="45dp"
+        android:background="@color/fundobotoes"
+        android:layoutDirection="rtl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--- <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="428dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="104dp"
+        android:orientation="horizontal"
+        android:background="@color/fundobotoes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/btHomeInicial"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/btVenderHome"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_local_offer_24" />
+
+        <ImageButton
+            android:id="@+id/btListaCategoriaHome"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_dehaze_24" />
+
+        <ImageButton
+            android:id="@+id/btCarrinhoHome"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+        <ImageButton
+            android:id="@+id/btPerfilHome"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <ImageButton
+            android:id="@+id/btFaleConoscoHome"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_help_24" />
+    </LinearLayout> -->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="293dp"
+        android:layout_height="134dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.174">
+
+        <ImageView
+            android:id="@+id/imgv_telahome_imagemcarrossel"
+            android:layout_width="310dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/carrosselcelular" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgv_telahome_logotipo"
+        android:layout_width="107dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/logosemfundo" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_telahome_proximaimg"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_weight="1"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204"
+        app:srcCompat="@drawable/ic_baseline_keyboard_double_arrow_right_24" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_telahome_imganterior"
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        android:layout_weight="1"
+        android:backgroundTint="#0DFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204"
+        app:srcCompat="@drawable/ic_baseline_keyboard_double_arrow_left_24" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_telahome_camisas"
+        android:layout_width="187dp"
+        android:layout_height="129dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41"
+        app:srcCompat="@drawable/camisa" />
+
+    <TextView
+        android:id="@+id/txtv_telahome_camisas"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:text="Camisa Reserva   R$ 90,00"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <TextView
+        android:id="@+id/txtv_telahome_bicicleta"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:text="Bicicleta Trek Marlin     R$ 899,00"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_telahome_celulares"
+        android:layout_width="129dp"
+        android:layout_height="122dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.407"
+        app:srcCompat="@drawable/iphone" />
+
+    <TextView
+        android:id="@+id/txtv_telahome_sapatos"
+        android:layout_width="177dp"
+        android:layout_height="47dp"
+        android:text="Tênis Vans Old School    R$ 80,00"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.839" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_telahome_bicicletas"
+        android:layout_width="168dp"
+        android:layout_height="124dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731"
+        app:srcCompat="@drawable/bicicletared" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_telahome_sapatos"
+        android:layout_width="172dp"
+        android:layout_height="114dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745"
+        app:srcCompat="@drawable/tenis" />
+
+    <TextView
+        android:id="@+id/txtv_telahome_celulares"
+        android:layout_width="151dp"
+        android:layout_height="42dp"
+        android:text="Iphone 12 - 64 GB    R$ 6.000,00"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

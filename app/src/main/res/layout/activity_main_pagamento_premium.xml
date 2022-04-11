@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PagamentoPremium">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="428dp"
+        android:layout_height="73dp"
+        android:background="@color/fundobotoes"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgbtn_telapagamentopremium_home"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telapagamentopremium_vender"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_local_offer_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telapagamentopremium_listacateg"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_dehaze_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telapagamentopremium_carrinho"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telapagamentopremium_perfil"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telapagamentopremium_ajuda"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_help_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_telapagamentopremium_planopremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLANO PREMIUM"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <Button
+        android:id="@+id/btn_telapagamentopremium_pagar"
+        android:layout_width="206dp"
+        android:layout_height="66dp"
+        android:text="PAGAR"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704" />
+
+    <ImageView
+        android:id="@+id/imgv_telapagamentopremium_imagemcartao"
+        android:layout_width="106dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.374"
+        app:srcCompat="@drawable/cartao"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgv_telapagamentopremium_imagemboleto"
+        android:layout_width="109dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465"
+        app:srcCompat="@drawable/icon_boleto"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:layout_width="249dp"
+        android:layout_height="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/rdbtn_telapagamentopremium_cartao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cartão de Crédito" />
+
+        <RadioButton
+            android:id="@+id/rdbtn_telaPagamentoPremium_boleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boleto " />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="192dp"
+        android:text="Forma de Pagamento"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.289" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

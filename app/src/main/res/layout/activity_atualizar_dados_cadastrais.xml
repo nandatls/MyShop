@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtualizarDadosCadastrais">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATUALIZAÇÃO DE DADOS"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <Button
+        android:id="@+id/btn_telaatualizardadoscadastrais_atualizar"
+        android:layout_width="181dp"
+        android:layout_height="55dp"
+        android:text="ATUALIZAR DADOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.798" />
+
+    <LinearLayout
+        android:layout_width="337dp"
+        android:layout_height="355dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359">
+
+        <EditText
+            android:id="@+id/edttxt_telaatualizardadoscadastrais_nomeusu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edttxt_telaatualizardadoscadastrais_telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tel"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:id="@+id/edttxt_telaatualizardadoscadastrais_cep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cep"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/edttxt_telaatualizardadoscadastrais_rua"
+            android:layout_width="236dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Endereco"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edttxt_telaatualizardadoscadastrais_bairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Bairro"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edttxt_telaatualizardadoscadastrais_cidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cidade"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edttxt_telaatualizardadoscadastrais_estado"
+            android:layout_width="71dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:hint="Estado"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

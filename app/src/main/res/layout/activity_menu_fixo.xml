@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFixo">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="428dp"
+        android:layout_height="73dp"
+        android:background="@color/fundobotoes"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imgbtn_menufixo_home"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telamenufixo_cadastrovendedor"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_local_offer_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telamenufixo_listadecategorias"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_dehaze_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telamenufixo_carrinho"
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telamenufixo_contausuario"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_telamenufixo_contatoconosco"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/fundobotoes"
+            app:srcCompat="@drawable/ic_baseline_help_24" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

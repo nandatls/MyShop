@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.homeapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Homeapp" >
+
+        <activity
+            android:name=".Adicionarcarrinhodalistadeprodutosenc"
+            android:exported="false" />
+        <activity
+            android:name=".AtualizarDadosCadastrais"
+            android:exported="false" />
+        <activity
+            android:name=".ProdutonaoEncontrado"
+            android:exported="false" />
+        <activity
+            android:name=".LoginUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".MenuFixo"
+            android:exported="false" />
+        <activity
+            android:name=".PedidoFinalizado"
+            android:exported="false" />
+        <activity
+            android:name=".FinalizarCompra"
+            android:exported="false" />
+        <activity
+            android:name=".RecuperacaodeSenha"
+            android:exported="false" />
+        <activity
+            android:name=".AdicionarProdutoCarrinho"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarEndereco"
+            android:exported="false" />
+        <activity
+            android:name=".CadastrarDadosUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".ContratoPlanoPremium"
+            android:exported="false" />
+        <activity
+            android:name=".CarrinhodeProdutos"
+            android:exported="false" />
+        <activity
+            android:name=".CategoriasProdutos"
+            android:exported="false" />
+        <activity
+            android:name=".ContatoConosco"
+            android:exported="false" />
+        <activity
+            android:name=".ContratoPlanoFree"
+            android:exported="false" />
+        <activity
+            android:name=".PagamentoProduto"
+            android:exported="false" />
+        <activity
+            android:name=".PagamentoPremium"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarProduto"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilConta"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrarVendedor"
+            android:exported="false" />
+        <activity
+            android:name=".LoginVendas"
+            android:exported="false" />
+        <activity
+            android:name=".ListaProdutosEncontrados"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
